@@ -1,0 +1,14 @@
+{
+  "name": "brohub",
+  "private": true,
+  "packageManager": "pnpm@10.30.3",
+  "engines": { "node": ">=22" },
+  "pnpm": { "onlyBuiltDependencies": ["esbuild"] },
+  "scripts": {
+    "dev": "pnpm --filter @brohub/web dev",
+    "build": "pnpm --filter @brohub/web build",
+    "preview": "pnpm --filter @brohub/web preview",
+    "typecheck": "pnpm --filter @brohub/web exec tsc -b",
+    "test": "pnpm --filter @brohub/web test"
+  }
+}
