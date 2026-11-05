@@ -26,7 +26,6 @@ const PRESET_EXERCISES = [
 
 export function WorkoutTracker() {
   const [sessions, setSessions] = useState<WorkoutSession[]>([]);
-  const [adding, setAdding] = useState(false);
   const [label, setLabel] = useState("Chest Day 💪");
   const [exercises, setExercises] = useState<Exercise[]>([{ name: "Bench Press", sets: [{ reps: 10, weight: 60 }] }]);
   const [view, setView] = useState<"list" | "add">("list");
